@@ -1,0 +1,152 @@
+body {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color:#0b323d;
+    direction: ltr;
+}
+.container
+{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+}
+ul {
+    padding: 0;
+    margin: 0;
+   }
+header
+{
+    background:#0b323d;
+    color:azure;
+    padding-top:30px;
+    min-height:70px;
+    border-bottom:#808080 5px solid;
+
+}
+header a {
+    
+    color: azure;
+   text-decoration:none;
+   font-size: 19px;
+}
+header li {
+   float:left;
+   display:inline;
+   padding:0 20px 0 20px;
+
+}
+    header #brand {
+        float: left;
+        
+    }
+        header #brand h1 {
+            margin: 0;
+            color: azure;
+        }
+    header nav {
+        float: right;
+        margin-top:10px;
+    }
+    header .current a {
+        margin-left:20px;
+        color:sienna;
+        font-weight: bold;
+    }
+    header a:hover {
+        color: lightseagreen;
+        font-weight: bold;
+        text-decoration:underline;
+    }
+#showcase {
+    min-height: 400px;
+    background: url("../projectPhoto/p2.jpg") no-repeat center;
+    background-size:cover;
+}
+#newletter {
+    padding: 0;
+    color:ghostwhite;
+    background-color:lightslategrey;
+    font-weight:lighter;
+}
+    #newletter:hover {
+        padding: 0;
+        color: darkcyan;
+        background-color: ghostwhite;
+    }
+    #newletter h1 {
+        float: left;
+    }
+    #newletter form {
+        float: right;
+        margin-top:15px;
+    }
+    #newletter input[type=text] 
+    {
+        padding:4px;
+        height:25px;
+        width:250px;
+    }
+.button {
+    height: 38px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color:ghostwhite;
+    color: darkcyan;
+   
+}
+    .button:hover {
+        background-color: darkcyan;
+        color: ghostwhite;
+        font-weight: bold;
+    }
+    #boxes
+    {
+        margin-top:20px;
+
+    }
+ #boxes .box  {
+    float:left;
+    text-align:center;
+    width:30%;
+    padding:10px;
+   
+        }
+footer {
+    padding: 10px;
+    color: ghostwhite;
+    background-color: lightslategrey;
+    color: ghostwhite;
+    text-align: left;
+    font-weight:normal;
+    font-size: 15px;
+}
+@media(max-width:768px)
+{
+    header #brand,
+    header nav,
+    header nav li,
+    #newletter h1,
+    #newletter form,
+    {
+        float:none;
+        text-align:center;
+        width:100px;
+
+    }
+    header
+    {
+        padding-bottom:20px;
+
+    }
+    #newletter .button
+    {
+        display:block;
+        width:100%;
+    }
+    #newletter form input[type=text] 
+    {
+        width: 100%;
+        margin-bottom:5px;
+    }
+}

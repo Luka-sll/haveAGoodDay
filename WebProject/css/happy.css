@@ -1,0 +1,134 @@
+body {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color:#0b323d;
+    direction: ltr;
+}
+.container
+{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+}
+ul {
+    padding: 0;
+    margin: 0;
+   }
+header
+{
+    background:#0b323d;
+    color:azure;
+    padding-top:30px;
+    min-height:70px;
+    border-bottom:#808080 5px solid;
+
+}
+header a {
+    
+    color: azure;
+   text-decoration:none;
+   font-size: 19px;
+}
+header li {
+   float:left;
+   display:inline;
+   padding:0 20px 0 20px;
+
+}
+    header #brand {
+        float: left;
+        
+    }
+        header #brand h1 {
+            margin: 0;
+            color:lightgray;
+        }
+    header nav {
+        float: right;
+        margin-top:10px;
+    }
+    header .current a {
+        margin-left: 20px;
+        color: sienna;
+        font-weight: bold;
+    }
+    header a:hover {
+        color: lightseagreen;
+        font-weight: bold;
+        text-decoration:underline;
+    }
+#showcase {
+    min-height: 200px;
+    background: url("../projectPhoto/p2.jpg") no-repeat center;
+    background-size:cover;
+}
+#newletter {
+    padding: 0;
+    color:ghostwhite;
+    background-color:lightslategrey;
+}
+    #newletter:hover {
+        padding: 0;
+        color: darkcyan;
+        background-color: ghostwhite;
+    }
+    #newletter h1 {
+        float: left;
+    }
+
+.right-col
+{
+    float:right;
+    margin-right:6%;
+    margin-top:120px;
+    display:flex;
+    align-items:center;
+
+}
+    .right-col p
+    {
+        font-size:18px;
+        color:darkgray;
+        font-weight:400;
+        margin-right:15px;
+    }
+    #icon {
+        width:50px;
+        cursor:pointer;
+    }
+
+
+
+
+    footer {
+        padding: 10px;
+        color: ghostwhite;
+        background-color: lightslategrey;
+        color: ghostwhite;
+        text-align: left;
+        font-weight: normal;
+        font-size: 15px;
+        margin-top: 320px;
+    }
+@media(max-width:768px) {
+    header #brand,
+    header nav,
+    header nav li,
+   
+   
+    {
+        float: none;
+        text-align: center;
+        width: 100px;
+    }
+
+    header {
+        padding-bottom: 20px;
+    }
+
+   
+
+    
+}
+    

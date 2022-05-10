@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Have a good day</title>
+    <meta charset="utf-8">
+    <meta name="description" content=" relaxing website">
+    <link rel="stylesheet" href="./css/happy.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="brand">
+                <h1>   have a good day </h1>
+
+            </div>
+            <nav>
+                <ul>
+
+                    <li><a href="happy.html">HAPPY</a></li>
+                    <li><a href="fn.html">Feeling Nothing</a></li>
+                    <li><a href="sad.html">SAD</a></li>
+                    <li class="current"><a href="index.html">Homa Page</a></li>
+                </ul>
+            </nav>
+    </header>
+    <section id="showcase"></section>
+    <section id="newletter">
+        <div class="container">
+            <h1> It's OKay to Feel this Pain Just please know it will not last forever And if you got issues, I got tissues  </h1>
+
+
+        </div>
+    </section>
+    <div class="right-col">
+        <p> listen to this song change your mood </p>
+        <img src="projectPhoto/play.png" id="icon" />
+
+    </div>
+    <audio id="mySong">
+        <source src="projectPhoto/sad.mp3" type="audio/mp3" />
+
+    </audio>
+
+    <script>
+        var mySong = document.getElementById("mySong");
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function ()
+        {
+            if (mySong.paused)
+            {
+                mySong.play();
+                icon.src = "projectPhoto/pu.jpg";
+            }
+            else
+            {
+                mySong.paused();
+                icon.src = "projectPhoto/play.png";
+
+            }
+
+        }
+    </script>
+
+    <footer>
+        <p> have a good day official website &copy;2022</p>
+
+    </footer>
+
+</body>
+
+</html>
